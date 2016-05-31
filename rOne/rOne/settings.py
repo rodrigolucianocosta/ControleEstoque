@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Storage101'
+    'Storage101',
+    'localflavor'
 ]
 
 MIDDLEWARE_CLASSES = [

@@ -16,9 +16,12 @@ Including another URLconf
 from django.conf.urls import url,include,patterns
 from django.contrib import admin
 from django.conf.urls import include
-
+admin.autodiscover()
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^storage101/', include('Storage101.urls')),    
+    url(r'^storage101/$','Storage101.views.index'),   
+    url(r'^storage101/time/$','Storage101.views.current_time', name ='current_time'),   
+   
+   
 ]
