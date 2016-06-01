@@ -1,0 +1,38 @@
+{% load staticfiles %}
+{% load bootstrap3 %}
+{% bootstrap_css%}
+{% bootstrap_javascript %}
+{% bootstrap_messages %}
+<!DOCTYPE html>
+<html lang="pt-br">
+
+	<head>
+		<link href="{% static 'static/Storage101/bootstrap/css/bootstrap.min.css' %}"
+		rel="stylesheet" media="screen">
+
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+		<title> Cadastro </title>
+	</head>
+
+	<body>
+		<p class="navbar-text navbar-right">Signed in as
+		<a href="#" class="navbar-link"> 
+		Rodrigo            .
+		</a>
+		</p>
+		
+
+		<div class="panel panel-default">
+			<div class="panel-heading">Panel heading</div>
+				<table class="table">
+
+					<tr>	<td> Number </td> <td> FirstName </td>	<td> Last Name </td> <td> Points </td> </tr>
+					<tr>	<td>   01   </td> <td> Rodrigo   </td>  <td> Luciano   </td> <td>   100	 </td> </tr>				       </tr>
+				</table>
+		</div>
+			
+	<script src="{% static 'bootstrap/js/bootstrap.min.js' %}"</script>
+	</body>
+
+</html>

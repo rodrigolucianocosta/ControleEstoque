@@ -27,6 +27,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
+#TEMPLATE_DIRS = [os.path.join(BASE_DIR, 'templates')]
+
 
 # Application definition
 
@@ -38,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'Storage101',
+    'bootstrap3', 
     'localflavor'
 ]
 
@@ -57,7 +60,7 @@ ROOT_URLCONF = 'rOne.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': ['templates'],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
